@@ -1,0 +1,288 @@
+/* General styles */
+body {
+    font-family: Outfit, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 50px;
+}
+
+.logo-text {
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Add chevron to the dropdown items */
+nav ul li.chevron::after {
+    content: "\25BC";
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+/* Smaller text for About Us, Contact Us, and Donate */
+.small-text a {
+    font-size: 14px;
+}
+
+/* Larger text for Login and Register */
+.large-text a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Login button with black outline */
+.large-text a.login {
+    border: 2px solid black;
+    padding: 8px 16px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    color: black;
+}
+
+/* Register button with black background */
+.large-text a.register {
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+/* Button styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.black-background {
+    background-color: black;
+}
+
+/* Center login options */
+.login-options {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-with-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: -30px;
+}
+
+/* Adjust the Google logo size */
+.google-logo {
+    width: 40px;
+    height: 40px;
+}
+
+/* Separator */
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 0 1 100px;
+    border-bottom: 1px solid #000;
+    margin: 0 10px;
+}
+/* Media container with flexbox layout */
+.media-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 40px auto;
+  }
+  
+  /* Left-side content */
+  .left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .left-side .text-content {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .left-side .image-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .left-side .image-container img {
+    max-width: 50px;
+    width: 100%;
+    height: 50px;
+    margin-left: 20px; /* Adjust the margin as needed */
+  }
+  
+  .left-side .app-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .left-side .app-buttons img {
+    width: 150px;
+    border-radius: 5px; /* Adjust the border-radius value as needed */
+  }
+  
+  /* Right-side content */
+  .right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; /* Center the image vertically */
+  }
+  
+  .right-side .text-content {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: right; /* Align text to the right */
+  }
+  
+  .right-side img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+  }
+
+/* Footer styles */
+footer {
+    background-color: #ffffff; /* Dark background for footer */
+    color: #000000; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px; /* Max width to center content */
+    margin: 0 auto;
+}
+
+.help-text {
+    font-size: 1.2rem; /* Larger font size for the help text */
+    margin-top: 20px;
+}
+
+.why-law {
+    font-size: 1.5rem; /* Larger font size for the "Why LawEase?" text */
+    margin-top: 20px;
+    font-weight: bold; /* Optional: make the text bold */
+}
+
+.footer-image {
+    margin-top: 20px; /* Space between text and image */
+}
+
+.footer-image img {
+    width: 100%; /* Image spans the full width of the footer */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: rounded corners for the image */
+}
+
+/* Existing footer styles */
+.existing-footer {
+    background-color: #222; /* Dark background for existing footer */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto; /* Center the footer and add margin */
+}
+
+/* New footer styles */
+.new-footer {
+    background-color: #000000; /* Darker background for new footer */
+    padding: 20px;
+    text-align: center;
+}
+
+.new-footer .footer-image {
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.new-footer .footer-image img {
+    width: 30%; /* Image spans the full width of the footer */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: rounded corners for the image */
+}
+
+.new-footer .footer-text {
+    color: #fff; /* White text color */
+}
+
+.footer-text .text-part-1 {
+    font-size: 1.2rem; /* Font size for the first part of the text */
+    margin: 0; /* Remove default margin */
+}
+
+.footer-text .text-part-2 {
+    font-size: 1.5rem; /* Larger font size for the second part of the text */
+    margin: 0; /* Remove default margin */
+    margin-top: 10px; /* Add space between the two parts of the text */
+}
